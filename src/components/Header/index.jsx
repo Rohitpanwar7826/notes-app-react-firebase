@@ -75,7 +75,6 @@ export default function Header() {
                   <li><button className="dropdown-item border-red p-3" onClick={signOutUser}>Sign Out</button></li>
                   <li><button disabled={sharedNoteRecord.loading} className="dropdown-item border-red p-3" onClick={handleEnableShareNotes}>
                     {sharedNoteRecord.loading ? "LOADING..." : sharedNoteRecord.sharedNoteRecord.is_allow ? "Disabled Incoming Notes" : "Enabled Incoming Notes"}</button></li>
-                  <li><a className="dropdown-item p-3" href="#">Something else here</a></li>
                 </ul>
               </div>
             </ul>
