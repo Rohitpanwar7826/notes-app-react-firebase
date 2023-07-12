@@ -1,0 +1,30 @@
+
+@media only screen and (max-width: 533px) {
+  table thead tr th {
+    font-size: 10px;
+  }
+
+  table tbody tr td {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  table thead tr th {
+    font-size: 10px;
+  }
+
+  table tbody tr td {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  table thead tr th {
+    font-size: 13px;
+  }
+
+  table tbody tr td {
+    font-size: 17px;
+  }
+}
