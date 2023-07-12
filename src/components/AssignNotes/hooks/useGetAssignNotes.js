@@ -28,7 +28,7 @@ const useGetAssignNotes = ({ currentUserId }) => {
                 id: note.id,
                 ...note.data(),
                 canEdit: sharedNote ? sharedNote.canEdit : false,
-                canDelete: sharedNote ? sharedNote.canEdit : false
+                canDelete: sharedNote ? sharedNote.canDelete : false
               }
             })
             setData(newData)
