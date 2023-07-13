@@ -5,6 +5,8 @@ import Loader from '../shared/Loader'
 import { deleteDocRef } from '../../firebase';
 import { deleteDoc } from 'firebase/firestore';
 import { loadingToaster, updateToasterToError, updateToasterToSuccess } from '../toaster/index.';
+import { isEmpty } from 'lodash';
+import EmptyCard from '../shared/EmptyCard';
 
 const MyNotes = () => {
   const { loading, notes } = useGetNotes();
@@ -33,6 +35,7 @@ const MyNotes = () => {
             }
           </div>
         }
+        { !loading && notes && isEmpty(notes) ? < EmptyCard /> : null }
       </>
     )
 }
